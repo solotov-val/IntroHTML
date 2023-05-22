@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <title>Das Plotter-Projekt</title>
+  <meta charset="UTF-8">
+  <title>Hashing in Java</title>
 </head>
 <body>
-<h1>Das Plotter-Projekt</h1>
-<p><strong>Plotter</strong> ist ein kreatives und innovatives Projekt, das auf GitHub gehostet wird.</p>
+<h1>Hashing in Java</h1>
+<p><strong>Hashing</strong> ist ein wichtiger Aspekt der Informatik und besonders relevant in der Programmiersprache <em>Java</em>.</p>
 <hr>
-
-<h2>Über das Projekt</h2>
+<h2>Was ist Hashing?</h2>
+<p>Hashing ist ein Prozess, bei dem ein <span style="font-weight:bold;">Hashcode</span> erzeugt wird. Ein Hashcode ist ein eindeutiger Code, der einem bestimmten Objekt zugeordnet ist.</p>
+<blockquote>"Hashing ist der Prozess der Umwandlung von Informationen in einen Hashcode."</blockquote>
+<h2>Warum ist Hashing wichtig?</h2>
+<p>Hashing ist wichtig, weil es die Suche und das Abrufen von Elementen in einer Datenstruktur beschleunigt. Es ist besonders nützlich in Datenstrukturen wie <span style="font-style:italic;">Hashmaps</span> und <span style="font-style:italic;">Hashtabellen</span>.</p>
+<hr>
+<h2>Hashing in Java</h2>
+<p>In Java wird Hashing häufig verwendet, um Daten in einer Hashmap oder Hashtabelle zu speichern und abzurufen. Java bietet eingebaute Methoden für das Hashing, wie die Methode <span style="font-weight:bold;">hashCode()</span>.</p>
 <div>
-  <p>Das <strong>Plotter</strong> Projekt ist ein Open-Source-Projekt, das darauf abzielt, ein Werkzeug zu entwickeln, das Benutzern hilft, Daten auf einfache und effiziente Weise zu visualisieren.</p>
-  <img src="plotter.png" alt="Screenshot von Plotter">
+  <h2>Beispiel für Hashing in Java</h2>
+  <p>Hier ist ein einfaches Beispiel für Hashing in Java:</p>
+  <pre>
+            <code>
+            public class Main {
+                public static void main(String[] args) {
+                    String name = "Java";
+                    int hashCode = name.hashCode();
+                    System.out.println("Der Hashcode für " + name + " ist: " + hashCode);
+                }
+            }
+            </code>
+        </pre>
 </div>
-
-<h2>Beitragen zum Projekt</h2>
-<div>
-  <p>Als Open-Source-Projekt sind Beiträge von der Community herzlich willkommen. Jeder, der Interesse an <em>Datenvisualisierung</em> und <em>Softwareentwicklung</em> hat, ist eingeladen, zum Projekt beizutragen.</p>
-  <p><q>Die beste Art, die Zukunft vorherzusagen, ist, sie zu programmieren.</q> - Alan Kay</p>
-</div>
-
-<h2>Das Projekt auf GitHub</h2>
-<div>
-  <p>Sie können das Projekt auf GitHub finden und mehr über die laufenden Entwicklungen erfahren. Sie können auch Fehler melden, Funktionen anfordern oder sogar Ihren eigenen Code beitragen.</p>
-  <iframe src="https://github.com/TheD4rkCoder/Plotter" title="Plotter auf GitHub" width="800" height="600" style="border:0;"></iframe>
-</div>
-
-<h2>Das Projekt in Aktion</h2>
-<div>
-  <p>Hier ist ein kurzes Video, das zeigt, wie das Plotter-Projekt in Aktion aussieht und wie es Daten visualisiert.</p>
-  <video src="plotter_demo.mp4" controls autoplay>
-    Ihr Browser unterstützt das Video-Tag nicht.
-  </video>
-</div>
+<hr>
+<h2>Bild zum Thema Hashing</h2>
+<img src="img/img.png" alt="Hashing in Java">
+<h2>Video zum Thema Hashing</h2>
+<video width="853" height="480" controls>
+  <source src="hashing_video.mp4" type="video/mp4">
+  Ihr Browser unterstützt das Video-Tag nicht.
+</video>
 </body>
 </html>

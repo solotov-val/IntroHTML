@@ -1,0 +1,34 @@
+body {
+  font-family: Arial;
+  font-size: 14pt;
+}
+
+h1 {
+  font-size: 30pt;
+  color: #4a86e8; /* Eine geeignete Farbe */
+}
+
+span {
+  font-style: italic;
+}
+
+div {
+  color: red;
+}
+
+blockquote {
+  font-weight: bold;
+}
+
+/* Eigene CSS-Befehle */
+p {
+  line-height: 1.6; /* Erhöht den Zeilenabstand für bessere Lesbarkeit */
+}
+
+img {
+  max-width: 100%; /* Stellt sicher, dass Bilder nicht breiter als ihre Container sind */
+}
+
+video {
+  max-width: 100%; /* Stellt sicher, dass Videos nicht breiter als ihre Container sind */
+}

@@ -1,34 +1,58 @@
 body {
   font-family: Arial;
   font-size: 14pt;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 10px;
+  padding: 10px;
 }
 
 h1 {
   font-size: 30pt;
-  color: #4a86e8; /* Eine geeignete Farbe */
+  color: #4a86e8;
 }
 
 span {
   font-style: italic;
 }
 
-div {
+div.important {
   color: red;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
 }
 
 blockquote {
   font-weight: bold;
 }
 
-/* Eigene CSS-Befehle */
+a:visited {
+  color: violet;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
 p {
-  line-height: 1.6; /* Erhöht den Zeilenabstand für bessere Lesbarkeit */
+  line-height: 1.6;
+  margin: 10px;
+  padding: 10px;
 }
 
 img {
-  max-width: 100%; /* Stellt sicher, dass Bilder nicht breiter als ihre Container sind */
+  max-width: 100%;
+  margin: 10px;
+  padding: 10px;
 }
 
 video {
-  max-width: 100%; /* Stellt sicher, dass Videos nicht breiter als ihre Container sind */
+  max-width: 100%;
+  margin: 10px;
+  padding: 10px;
 }

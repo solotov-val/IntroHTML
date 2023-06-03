@@ -1,27 +1,27 @@
-# IntroHTML
+# IntroHTML: A Step-by-Step Guide to Web Development
 
-Welcome to IntroHTML! This is a school project where we learn HTML, CSS, and JavaScript step by step. The project is updated frequently to ensure we're always learning something new.
+Welcome to IntroHTML, a comprehensive learning project designed to guide through the basics of HTML, CSS, and JavaScript. This project is updated regularly to ensure that I will always learning and growing.
 
-## Project Structure
+## What's Inside?
 
-The project is organized into several directories:
+The project is neatly organized into several directories, each serving a unique purpose:
 
-- `.idea`: Contains project settings files.
-- `css`: Contains all CSS files for styling the web pages.
-- `doc`: Contains documentation related to the project.
-- `img`: Contains images used in the project.
-- `js`: Contains JavaScript files to add interactivity to the web pages.
+- `.idea`: This directory contains project settings files.
+- `css`: This is where all the CSS files for styling the web pages are stored.
+- `doc`: Here you'll find documentation related to the project.
+- `img`: This directory contains images used in the project.
+- `js`: This is where JavaScript files that add interactivity to the web pages are stored.
 
 In addition to these directories, the project contains several important files:
 
-- `.editorconfig`, `.gitattributes`, `.gitignore`, `.htaccess`: Configuration files for various tools.
-- `404.html`: The 404 error page.
-- `LICENSE.txt`: The license for the project.
-- `browserconfig.xml`, `favicon.ico`, `site.webmanifest`, `tile-wide.png`, `tile.png`: Files related to site icons and browser configuration.
-- `index.html`: The main HTML file for the website.
-- `package-lock.json`, `package.json`: Configuration files for Node.js.
-- `robots.txt`: Instructions for web robots.
-- `hashing_video.mp4`: A video file related to the project.
+- `.editorconfig`, `.gitattributes`, `.gitignore`, `.htaccess`: These are configuration files for various tools.
+- `404.html`: This is the 404 error page.
+- `LICENSE.txt`: This file contains the license for the project.
+- `browserconfig.xml`, `favicon.ico`, `site.webmanifest`, `tile-wide.png`, `tile.png`: These files are related to site icons and browser configuration.
+- `index.html`: This is the main HTML file for the website.
+- `package-lock.json`, `package.json`: These are configuration files for Node.js.
+- `robots.txt`: This file contains instructions for web robots.
+- `hashing_video.mp4`: This is a video file related to the project.
 
 ## Languages Used
 
@@ -31,11 +31,6 @@ The project primarily uses CSS (62.6%), HTML (30.5%), and JavaScript (6.9%).
 
 This project is licensed under the MIT license.
 
-## Contributing
+## Stay Updated
 
-We welcome contributions! Feel free to fork the repository and submit pull requests. If you find any issues or have suggestions, please open an issue.
-
-## Updates
-
-Keep an eye on this space for updates as we progress through our learning journey!
-
+Keep an eye on this space for updates as I progress through my learning journey!

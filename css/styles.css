@@ -68,7 +68,7 @@ body {
 
 /* Stil für den Hauptinhalt */
 .content {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8); /* Hintergrundfarbe mit Transparenz */
   padding: 20px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -84,7 +84,7 @@ span {
   font-style: italic; /* Text im Span-Element wird kursiv */
 }
 
-div.important {
+div.important { /* Wählt alle Elemente mit der Klasse "important" aus */
   color: red;
   border: 2px solid black;
   margin: 10px;
@@ -106,7 +106,7 @@ a:hover {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.6; /* Zeilenabstand */
   margin: 10px;
   padding: 10px;
 }
@@ -118,7 +118,7 @@ img {
   padding: 10px;
 }
 
-video {
+video { /* Videos werden auf die volle Breite skaliert */
   max-width: 100%;
   margin: 10px;
   padding: 10px;
@@ -141,10 +141,10 @@ video {
   display: block; /* Labels nehmen eine ganze Zeile ein */
 }
 
-.form-element input[type=text],
-.form-element input[type=email],
-.form-element textarea,
-.form-element select {
+.form-element input[type=text], /* Wählt alle Textfelder aus */
+.form-element input[type=email],  /* Wählt alle E-Mail-Felder aus */
+.form-element textarea, /* Wählt alle Textareas aus */
+.form-element select {  /* Wählt alle Select-Elemente aus */
   width: 100%;
   padding: 12px 20px;
   border: 1px solid #ccc;
@@ -152,8 +152,8 @@ video {
   box-sizing: border-box;
 }
 
-.form-element input[type=submit],
-.form-element input[type=reset] {
+.form-element input[type=submit], /* Wählt alle Submit-Buttons aus */
+.form-element input[type=reset] {/* Wählt alle Reset-Buttons aus */
   width: 48%;
   background-color: #4a86e8;
   color: white;
@@ -164,8 +164,8 @@ video {
   font-size: 14pt;
 }
 
-.form-element input[type=submit]:hover,
-.form-element input[type=reset]:hover {
+.form-element input[type=submit]:hover, /* Ändert die Hintergrundfarbe beim Überfahren */
+.form-element input[type=reset]:hover { /* Ändert die Hintergrundfarbe beim Überfahren */
   background-color: #45a049; /* Ändert die Hintergrundfarbe beim Überfahren */
 }
 

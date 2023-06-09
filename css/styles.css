@@ -87,6 +87,7 @@ span {
 div.important { /* Wählt alle Elemente mit der Klasse "important" aus */
   color: red;
   border: 2px solid black;
+  border-radius: 4px;
   margin: 10px;
   padding: 10px;
 }
@@ -113,21 +114,22 @@ p {
 
 /* Stile für Bilder und Videos */
 img {
+  border: 1px solid black;
   max-width: 100%;
-  margin: 10px;
-  padding: 10px;
+  border-radius: 4px;
 }
 
 video { /* Videos werden auf die volle Breite skaliert */
+  border: 1px solid black;
   max-width: 100%;
-  margin: 10px;
-  padding: 10px;
+  border-radius: 4px;
 }
 
 /* Stile für das Kontaktformular */
 .contact-form {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid black;
+  border-radius: 4px;
   margin: 10px;
   padding: 20px;
 }
@@ -154,7 +156,7 @@ video { /* Videos werden auf die volle Breite skaliert */
 
 .form-element input[type=submit], /* Wählt alle Submit-Buttons aus */
 .form-element input[type=reset] {/* Wählt alle Reset-Buttons aus */
-  width: 48%;
+  width: 49.75%;
   background-color: #4a86e8;
   color: white;
   padding: 14px 20px;

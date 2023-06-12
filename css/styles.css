@@ -144,9 +144,9 @@ video { /* Videos werden auf die volle Breite skaliert */
 }
 
 .form-element input[type=text], /* Wählt alle Textfelder aus */
-.form-element input[type=email],  /* Wählt alle E-Mail-Felder aus */
+.form-element input[type=email], /* Wählt alle E-Mail-Felder aus */
 .form-element textarea, /* Wählt alle Textareas aus */
-.form-element select {  /* Wählt alle Select-Elemente aus */
+.form-element select { /* Wählt alle Select-Elemente aus */
   width: 100%;
   padding: 12px 20px;
   border: 1px solid #ccc;
@@ -155,7 +155,7 @@ video { /* Videos werden auf die volle Breite skaliert */
 }
 
 .form-element input[type=submit], /* Wählt alle Submit-Buttons aus */
-.form-element input[type=reset] {/* Wählt alle Reset-Buttons aus */
+.form-element input[type=reset] { /* Wählt alle Reset-Buttons aus */
   width: 49.75%;
   background-color: #4a86e8;
   color: white;
@@ -179,7 +179,7 @@ video { /* Videos werden auf die volle Breite skaliert */
 /* Flexbox-Styling für Newsletter und Geschlecht */
 .flex {
   display: flex;
-  align-items: center;  /* Zentriert die Elemente vertikal */
+  align-items: center; /* Zentriert die Elemente vertikal */
   gap: 10px;
 }
 

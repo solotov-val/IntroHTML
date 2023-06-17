@@ -25,6 +25,7 @@ body {
   float: left;
 }
 
+/* Stil Navigationsleiste */
 .navbar li a {
   display: block;
   color: white;

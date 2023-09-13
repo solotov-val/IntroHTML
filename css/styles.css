@@ -103,7 +103,7 @@ a:visited {
 }
 
 a:hover {
-  color: gray; /* Verändert die Farbe der Links beim Überfahren */
+  color: grey; /* Verändert die Farbe der Links beim Überfahren */
   text-decoration: underline;
 }
 

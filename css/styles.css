@@ -10,6 +10,26 @@ body {
   padding: 10px;
 }
 
+/* Stile für Überschriften und Texte */
+h1 {
+  font-size: 30pt;
+  color: #4a86e8;
+}
+
+p {
+  line-height: 1.6; /* Zeilenabstand */
+  margin: 10px;
+  padding: 10px;
+}
+
+span {
+  font-style: italic; /* Text im Span-Element wird kursiv */
+}
+
+blockquote {
+  font-weight: bold; /* Blockzitate sind fett */
+}
+
 /* Stil für die Navigationsleiste */
 .navbar {
   background-color: #333;
@@ -25,7 +45,6 @@ body {
   float: left;
 }
 
-/* Stil Navigationsleiste */
 .navbar li a {
   display: block;
   color: white;
@@ -38,7 +57,15 @@ body {
   background-color: #111; /* Verändert die Hintergrundfarbe beim Überfahren */
 }
 
-/* Stil für eine Liste mit benutzerdefiniertem Stil */
+/* Stile für den Hauptinhalt */
+.content {
+  background-color: rgba(255, 255, 255, 0.8); /* Hintergrundfarbe mit Transparenz */
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Stile für Listen */
 .custom-list {
   font-size: 16pt;
   font-family: 'Courier New', Courier, monospace;
@@ -48,7 +75,7 @@ body {
   padding: 10px;
 }
 
-/* Stil für eine benutzerdefinierte Tabelle */
+/* Stile für Tabellen */
 .custom-table {
   width: 100%;
   border-collapse: collapse;
@@ -67,36 +94,7 @@ body {
   background-color: #ddd; /* Ändert die Hintergrundfarbe beim Überfahren */
 }
 
-/* Stil für den Hauptinhalt */
-.content {
-  background-color: rgba(255, 255, 255, 0.8); /* Hintergrundfarbe mit Transparenz */
-  padding: 20px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-/* Stile für Überschriften und Texte */
-h1 {
-  font-size: 30pt;
-  color: #4a86e8;
-}
-
-span {
-  font-style: italic; /* Text im Span-Element wird kursiv */
-}
-
-div.important { /* Wählt alle Elemente mit der Klasse "important" aus */
-  color: red;
-  border: 2px solid black;
-  border-radius: 4px;
-  margin: 10px;
-  padding: 10px;
-}
-
-blockquote {
-  font-weight: bold; /* Blockzitate sind fett */
-}
-
+/* Stile für Links */
 a:visited {
   color: violet; /* Verändert die Farbe von besuchten Links */
   text-decoration: underline;
@@ -107,23 +105,20 @@ a:hover {
   text-decoration: underline;
 }
 
-p {
-  line-height: 1.6; /* Zeilenabstand */
+/* Stile für Bilder und Videos */
+img, video {
+  border: 1px solid black;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/* Stile für spezielle Div-Elemente */
+div.important {
+  color: red;
+  border: 2px solid black;
+  border-radius: 4px;
   margin: 10px;
   padding: 10px;
-}
-
-/* Stile für Bilder und Videos */
-img {
-  border: 1px solid black;
-  max-width: 100%;
-  border-radius: 4px;
-}
-
-video { /* Videos werden auf die volle Breite skaliert */
-  border: 1px solid black;
-  max-width: 100%;
-  border-radius: 4px;
 }
 
 /* Stile für das Kontaktformular */
@@ -135,19 +130,19 @@ video { /* Videos werden auf die volle Breite skaliert */
   padding: 20px;
 }
 
-.form-element {
+.contact-form .form-element {
   margin-bottom: 20px; /* Platz unter jedem Formularelement */
 }
 
-.form-element label {
+.contact-form .form-element label {
   font-weight: bold; /* Labels sind fett */
   display: block; /* Labels nehmen eine ganze Zeile ein */
 }
 
-.form-element input[type=text], /* Wählt alle Textfelder aus */
-.form-element input[type=email], /* Wählt alle E-Mail-Felder aus */
-.form-element textarea, /* Wählt alle Textareas aus */
-.form-element select { /* Wählt alle Select-Elemente aus */
+.contact-form .form-element input[type=text],
+.contact-form .form-element input[type=email],
+.contact-form .form-element textarea,
+.contact-form .form-element select {
   width: 100%;
   padding: 12px 20px;
   border: 1px solid #ccc;
@@ -155,8 +150,8 @@ video { /* Videos werden auf die volle Breite skaliert */
   box-sizing: border-box;
 }
 
-.form-element input[type=submit], /* Wählt alle Submit-Buttons aus */
-.form-element input[type=reset] { /* Wählt alle Reset-Buttons aus */
+.contact-form .form-element input[type=submit],
+.contact-form .form-element input[type=reset] {
   width: 49.75%;
   background-color: #4a86e8;
   color: white;
@@ -167,17 +162,17 @@ video { /* Videos werden auf die volle Breite skaliert */
   font-size: 14pt;
 }
 
-.form-element input[type=submit]:hover, /* Ändert die Hintergrundfarbe beim Überfahren */
-.form-element input[type=reset]:hover { /* Ändert die Hintergrundfarbe beim Überfahren */
+.contact-form .form-element input[type=submit]:hover,
+.contact-form .form-element input[type=reset]:hover {
   background-color: #45a049; /* Ändert die Hintergrundfarbe beim Überfahren */
 }
 
-.form-element input[type=checkbox],
-.form-element input[type=radio] {
+.contact-form .form-element input[type=checkbox],
+.contact-form .form-element input[type=radio] {
   cursor: pointer; /* Zeigt einen Handcursor beim Überfahren */
 }
 
-/* Flexbox-Styling für Newsletter und Geschlecht */
+/* Flexbox-Styling */
 .flex {
   display: flex;
   align-items: center; /* Zentriert die Elemente vertikal */
@@ -226,4 +221,69 @@ video { /* Videos werden auf die volle Breite skaliert */
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+/* Stile für das Hamburger-Menü und die Navigationsleiste */
+
+/* Stil für das Hamburger-Menü-Icon */
+.hamburger-menu {
+  background: none;
+  border: none;
+  font-size: 24px; /* Größe des Hamburger-Menü-Icons */
+  cursor: pointer; /* Ändert den Cursor zu einem Zeiger beim Überfahren */
+  display: none; /* Standardmäßig nicht angezeigt */
+  align-items: center; /* Zentriert die Elemente vertikal */
+}
+
+/* Grundstil für die Navigationsleiste */
+.navbar-nav {
+  display: flex;
+  flex-direction: row; /* Elemente werden horizontal angeordnet */
+  list-style-type: none; /* Entfernt die Standard-Listensymbole */
+  margin: 0;
+  padding: 0;
+}
+
+/* Stil für die Listenelemente in der Navigationsleiste */
+.navbar-nav li {
+  float: left; /* Listenelemente fließen von links nach rechts */
+}
+
+/* Stil für die Links in der Navigationsleiste */
+.navbar-nav li a {
+  display: block;
+  color: white; /* Textfarbe der Links */
+  text-align: center; /* Zentriert den Text der Links */
+  padding: 14px 16px; /* Polsterung um die Links */
+  text-decoration: none; /* Entfernt die Unterstreichung der Links */
+}
+
+/* Stil für die Links beim Überfahren in der Navigationsleiste */
+.navbar-nav li a:hover {
+  background-color: #111; /* Ändert die Hintergrundfarbe beim Überfahren */
+}
+
+/* Media Query für die responsive Gestaltung der Navigationsleiste und des Hamburger-Menüs */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex; /* Zeigt das Hamburger-Menü in kleinen Bildschirmen an */
+  }
+
+  .navbar-nav {
+    display: none; /* Versteckt die Navigationsleiste in kleinen Bildschirmen */
+    flex-direction: column; /* Elemente werden vertikal angeordnet */
+    position: absolute; /* Absolute Positionierung der Navigationsleiste */
+    top: 60px; /* Abstand von oben */
+    background-color: #333; /* Hintergrundfarbe der Navigationsleiste */
+    width: 100%; /* Breite der Navigationsleiste */
+  }
+
+  .navbar-nav li a {
+    padding: 10px; /* Polsterung der Links in kleinen Bildschirmen */
+  }
+}
+
+/* Stil für die Anzeige der Navigationsleiste, wenn das Hamburger-Menü geklickt wird */
+.show-nav {
+  display: flex; /* Zeigt die Navigationsleiste an */
 }

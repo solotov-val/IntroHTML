@@ -6,4 +6,3 @@ document.addEventListener('DOMContentLoaded', () => {
     navbarNav.classList.toggle('show-nav');
   });
 });
-

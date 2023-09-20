@@ -229,7 +229,7 @@ div.important {
 .hamburger-menu {
   background: none;
   border: none;
-  font-size: 24px; /* Größe des Hamburger-Menü-Icons */
+  font-size: 38px; /* Größe des Hamburger-Menü-Icons */
   cursor: pointer; /* Ändert den Cursor zu einem Zeiger beim Überfahren */
   display: none; /* Standardmäßig nicht angezeigt */
   align-items: center; /* Zentriert die Elemente vertikal */
@@ -264,7 +264,7 @@ div.important {
 }
 
 /* Media Query für die responsive Gestaltung der Navigationsleiste und des Hamburger-Menüs */
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .hamburger-menu {
     display: flex; /* Zeigt das Hamburger-Menü in kleinen Bildschirmen an */
   }

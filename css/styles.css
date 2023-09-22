@@ -199,12 +199,12 @@ div.important {
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
-  z-index: 1;
   bottom: 125%;
   left: 50%;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
+  z-index: 1;
 }
 
 .tooltip .tooltiptext::after {
@@ -233,6 +233,7 @@ div.important {
   cursor: pointer; /* Ändert den Cursor zu einem Zeiger beim Überfahren */
   display: none; /* Standardmäßig nicht angezeigt */
   align-items: center; /* Zentriert die Elemente vertikal */
+  z-index: 2;
 }
 
 /* Grundstil für die Navigationsleiste */
@@ -242,6 +243,7 @@ div.important {
   list-style-type: none; /* Entfernt die Standard-Listensymbole */
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 
 /* Stil für die Listenelemente in der Navigationsleiste */

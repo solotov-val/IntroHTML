@@ -1,6 +1,22 @@
+/* Definition der Variablen */
+:root {
+  --grund-font: Arial, serif;
+  --ueberschrift-farbe: #4a86e8;
+  --hintergrundfarbe: #333;
+  --link-hover-farbe: #111;
+  --weiss: #fff;
+  --schwarz: #000;
+  --grau: #ccc;
+  --dunkelgrau: #555;
+  --leichtgrau: #f2f2f2;
+  --rot: red;
+  --violet: violet;
+  --gruen: #45a049;
+}
+
 /* Grundlegende Stile */
 body {
-  font-family: Arial, serif;
+  font-family: var(--grund-font);
   font-size: 14pt;
   background-image: url("background.jpg");
   background-repeat: no-repeat;
@@ -13,26 +29,26 @@ body {
 /* Stile für Überschriften und Texte */
 h1 {
   font-size: 30pt;
-  color: #4a86e8;
+  color: var(--ueberschrift-farbe);
 }
 
 p {
-  line-height: 1.6; /* Zeilenabstand */
+  line-height: 1.6;
   margin: 10px;
   padding: 10px;
 }
 
 span {
-  font-style: italic; /* Text im Span-Element wird kursiv */
+  font-style: italic;
 }
 
 blockquote {
-  font-weight: bold; /* Blockzitate sind fett */
+  font-weight: bold;
 }
 
 /* Stil für die Navigationsleiste */
 .navbar {
-  background-color: #333;
+  background-color: var(--hintergrundfarbe);
   overflow: hidden;
   list-style-type: none;
   margin: 0;
@@ -47,19 +63,19 @@ blockquote {
 
 .navbar li a {
   display: block;
-  color: white;
+  color: var(--weiss);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .navbar li a:hover {
-  background-color: #111; /* Verändert die Hintergrundfarbe beim Überfahren */
+  background-color: var(--link-hover-farbe);
 }
 
 /* Stile für den Hauptinhalt */
 .content {
-  background-color: rgba(255, 255, 255, 0.8); /* Hintergrundfarbe mit Transparenz */
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -70,8 +86,8 @@ blockquote {
   font-size: 16pt;
   font-family: 'Courier New', Courier, monospace;
   list-style-type: circle;
-  border: 1px solid black;
-  background-color: #f2f2f2;
+  border: 1px solid var(--schwarz);
+  background-color: var(--leichtgrau);
   padding: 10px;
 }
 
@@ -82,40 +98,40 @@ blockquote {
 }
 
 .custom-table th, .custom-table td {
-  border: 1px solid #ddd;
+  border: 1px solid var(--grau);
   padding: 8px;
 }
 
 .custom-table tr:nth-child(even) {
-  background-color: #f2f2f2; /* Farbwechsel für jede zweite Zeile */
+  background-color: var(--leichtgrau);
 }
 
 .custom-table tr:hover {
-  background-color: #ddd; /* Ändert die Hintergrundfarbe beim Überfahren */
+  background-color: var(--grau);
 }
 
 /* Stile für Links */
 a:visited {
-  color: violet; /* Verändert die Farbe von besuchten Links */
+  color: var(--violet);
   text-decoration: underline;
 }
 
 a:hover {
-  color: grey; /* Verändert die Farbe der Links beim Überfahren */
+  color: var(--grau);
   text-decoration: underline;
 }
 
 /* Stile für Bilder und Videos */
 img, video {
-  border: 1px solid black;
+  border: 1px solid var(--schwarz);
   max-width: 100%;
   border-radius: 4px;
 }
 
 /* Stile für spezielle Div-Elemente */
 div.important {
-  color: red;
-  border: 2px solid black;
+  color: var(--rot);
+  border: 2px solid var(--schwarz);
   border-radius: 4px;
   margin: 10px;
   padding: 10px;
@@ -124,19 +140,19 @@ div.important {
 /* Stile für das Kontaktformular */
 .contact-form {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
+  border: 1px solid var(--schwarz);
   border-radius: 4px;
   margin: 10px;
   padding: 20px;
 }
 
 .contact-form .form-element {
-  margin-bottom: 20px; /* Platz unter jedem Formularelement */
+  margin-bottom: 20px;
 }
 
 .contact-form .form-element label {
-  font-weight: bold; /* Labels sind fett */
-  display: block; /* Labels nehmen eine ganze Zeile ein */
+  font-weight: bold;
+  display: block;
 }
 
 .contact-form .form-element input[type=text],
@@ -145,7 +161,7 @@ div.important {
 .contact-form .form-element select {
   width: 100%;
   padding: 12px 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--grau);
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -153,8 +169,8 @@ div.important {
 .contact-form .form-element input[type=submit],
 .contact-form .form-element input[type=reset] {
   width: 49.75%;
-  background-color: #4a86e8;
-  color: white;
+  background-color: var(--ueberschrift-farbe);
+  color: var(--weiss);
   padding: 14px 20px;
   border: none;
   border-radius: 4px;
@@ -164,23 +180,23 @@ div.important {
 
 .contact-form .form-element input[type=submit]:hover,
 .contact-form .form-element input[type=reset]:hover {
-  background-color: #45a049; /* Ändert die Hintergrundfarbe beim Überfahren */
+  background-color: var(--gruen);
 }
 
 .contact-form .form-element input[type=checkbox],
 .contact-form .form-element input[type=radio] {
-  cursor: pointer; /* Zeigt einen Handcursor beim Überfahren */
+  cursor: pointer;
 }
 
 /* Flexbox-Styling */
 .flex {
   display: flex;
-  align-items: center; /* Zentriert die Elemente vertikal */
+  align-items: center;
   gap: 10px;
 }
 
 .flex > div {
-  padding-left: 10px; /* Gibt inneren Divs einen linken Abstand */
+  padding-left: 10px;
 }
 
 /* Tooltip Stil */
@@ -193,8 +209,8 @@ div.important {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: #555;
-  color: #fff;
+  background-color: var(--dunkelgrau);
+  color: var(--weiss);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -215,7 +231,7 @@ div.important {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: var(--dunkelgrau) transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
@@ -229,18 +245,18 @@ div.important {
 .hamburger-menu {
   background: none;
   border: none;
-  font-size: 38px; /* Größe des Hamburger-Menü-Icons */
-  cursor: pointer; /* Ändert den Cursor zu einem Zeiger beim Überfahren */
-  display: none; /* Standardmäßig nicht angezeigt */
-  align-items: center; /* Zentriert die Elemente vertikal */
+  font-size: 38px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
   z-index: 2;
 }
 
 /* Grundstil für die Navigationsleiste */
 .navbar-nav {
   display: flex;
-  flex-direction: row; /* Elemente werden horizontal angeordnet */
-  list-style-type: none; /* Entfernt die Standard-Listensymbole */
+  flex-direction: row;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   z-index: 2;
@@ -248,44 +264,44 @@ div.important {
 
 /* Stil für die Listenelemente in der Navigationsleiste */
 .navbar-nav li {
-  float: left; /* Listenelemente fließen von links nach rechts */
+  float: left;
 }
 
 /* Stil für die Links in der Navigationsleiste */
 .navbar-nav li a {
   display: block;
-  color: white; /* Textfarbe der Links */
-  text-align: center; /* Zentriert den Text der Links */
-  padding: 14px 16px; /* Polsterung um die Links */
-  text-decoration: none; /* Entfernt die Unterstreichung der Links */
+  color: var(--weiss);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /* Stil für die Links beim Überfahren in der Navigationsleiste */
 .navbar-nav li a:hover {
-  background-color: #111; /* Ändert die Hintergrundfarbe beim Überfahren */
+  background-color: var(--link-hover-farbe);
 }
 
 /* Media Query für die responsive Gestaltung der Navigationsleiste und des Hamburger-Menüs */
 @media (max-width: 1080px) {
   .hamburger-menu {
-    display: flex; /* Zeigt das Hamburger-Menü in kleinen Bildschirmen an */
+    display: flex;
   }
 
   .navbar-nav {
-    display: none; /* Versteckt die Navigationsleiste in kleinen Bildschirmen */
-    flex-direction: column; /* Elemente werden vertikal angeordnet */
-    position: absolute; /* Absolute Positionierung der Navigationsleiste */
-    top: 60px; /* Abstand von oben */
-    background-color: #333; /* Hintergrundfarbe der Navigationsleiste */
-    width: 100%; /* Breite der Navigationsleiste */
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: var(--hintergrundfarbe);
+    width: 100%;
   }
 
   .navbar-nav li a {
-    padding: 10px; /* Polsterung der Links in kleinen Bildschirmen */
+    padding: 10px;
   }
 }
 
 /* Stil für die Anzeige der Navigationsleiste, wenn das Hamburger-Menü geklickt wird */
 .show-nav {
-  display: flex; /* Zeigt die Navigationsleiste an */
+  display: flex;
 }

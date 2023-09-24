@@ -305,3 +305,43 @@ div.important {
 .show-nav {
   display: flex;
 }
+
+/* 2D-Transition: Skalierung beim Überfahren */
+.animated-img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* 3D-Transition: 3D-Rotation beim Überfahren */
+.animated-table tr:hover {
+  transform: perspective(600px) rotateY(10deg);
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* Navigationsleiste Animation: Farbwechsel */
+.animated-navbar {
+  transition: background-color 0.5s ease-in-out;
+}
+.animated-navbar:hover {
+  background-color: #f0f0f0;
+}
+
+/* Überschrift Animation: Textschatten beim Überfahren */
+.animated-heading:hover {
+  text-shadow: 4px 4px 2px #aaa;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+/* Formular Animation: Schatten beim Überfahren */
+.animated-form:hover {
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Button Animation: Hintergrundfarbe und Textfarbe beim Überfahren */
+.animated-button:hover {
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
